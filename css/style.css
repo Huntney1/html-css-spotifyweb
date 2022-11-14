@@ -1,0 +1,80 @@
+*{
+    padding: 0 auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+     font-family: 'PT Sans', sans-serif;
+     background-color: black;
+}
+
+
+
+
+/**********************************
+*! MATERIALE DI LAYOUT
+***********************************/
+/** ICON SPOTIFY */
+/*? <i class="fa-brands fa-spotify"></i>  */ 
+
+/** ICON HOME */
+/*? <i class="fa-solid fa-house"></i> */
+
+/** ICON CERCA */
+/*? <i class="fa-solid fa-magnifying-glass"></i> */
+
+/** ICON LIBRERIA */
+/*? <img src="./spotify/img/libreria.svg" alt=""> */
+
+/** ICON HEART */
+/*? <i class="fa-solid fa-heart"></i> */
+
+/** ICON PICTURE */
+/*?  */
+
+/** ICON RIP.CASUALE */
+/*?  */
+
+/** ICON ARROW LEFT */
+/*? <i class="fa-solid fa-backward-step"></i> */
+
+/** ICON PLAY */
+/*? <i class="fa-solid fa-circle-play"></i> */
+
+/** ICON PAUSA */
+/*? <i class="fa-solid fa-circle-pause"></i> */
+
+/** ICON ARROW RIGHT */
+/*? <i class="fa-solid fa-forward-step"></i> */
+
+/** ICON RIPETIZIONE */
+/*?  */
+
+/** ICON MICROFONO */
+/*?  */
+
+/** ICON CODA */
+/*? <i class="fa-solid fa-sliders"></i> */
+
+/** ICON AUDIO */
+/*?  */ 
+
+/** ICON FRECCIA SINISTRA */
+/*? <i class="fa-solid fa-angle-left"></i> */
+
+/** ICON FRECCIA DESTRA */
+/*? <i class="fa-solid fa-angle-right"></i> */
+
+/** COLORE SAID BAR*/
+/*? rgba(0,0,0,255) */
+
+/** COLORE MAIN */
+/*? rgba(20,25,34,255) */
+
+/** COLORE FOOTER*/
+/*? rgba(40,40,40,255) */
+
+/** COLORE grigio utente*/
+/*? rgba(40,40,40,255) */
+
