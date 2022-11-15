@@ -127,7 +127,8 @@ footer {
 .master_play {
     display: flex;
     align-items: center;
-    padding: 35px 0px;
+    padding: 36px 0px;
+    margin-right: 30%;
 }
 
 
@@ -236,7 +237,7 @@ footer {
 .icon {
     width: 60%;
     position: absolute;
-    left: 40%;
+    left: 39%;
     top: 7%;
     color: white;
 }
@@ -249,19 +250,20 @@ footer {
 .master_play span {
     color: white;
     width: 6%;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 400;
 }
 
+
 #currentStart {
-    margin: 0px 4px 0px 16em;
+    margin: 0px 1em 0px 17em;
     text-align: center;
 }
 
 .bar {
     position: relative;
-    width: 43%;
-    height: 2px;
+    width: 5rem;
+    height: 3px;
     background-color: rgba(105, 105, 170, 0.1);
 }
 
@@ -305,24 +307,29 @@ footer {
     box-shadow: inset 0px 0px 3px #36e2ec;
 }
 
-#currentEnd {}
+/* #currentEnd {} */
 
 
 
 .vol {
-    position: relative;
-    width: 100px;
+    
+    width: 20%;
     height: 2px;
-    margin-left: 50px;
+    position: relative;
+    bottom: 86%;
+    left: 38%;
+   /*  margin-left: 50px; */
     border-color: rgba(105, 105, 170, 0.1);
+    background-color: rebeccapurple;
 }
 
 .vol i {
     position: absolute;
     color: white;
-    font-size: 25px;
-    top: -17px;
-    left: -30px
+    /* font-size: 20px; */
+    top: -8px;
+    right: 100px;
+
 }
 
 .vol input {
