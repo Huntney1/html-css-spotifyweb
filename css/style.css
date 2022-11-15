@@ -4,16 +4,10 @@
     box-sizing: border-box;
 }
 
-footer {
-    height: 100px;
-    width: 100vw;
-    background-color: rgba(40, 40, 40, 255);
-}
-
 /* side bar */
 .wrapper {
     width: 100vw;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 55px);
     background-color: rgb(0, 0, 0, 255);
     position: relative;
 }
@@ -73,9 +67,9 @@ aside {
     left: 0;
 }
 
-.download-app{
-font-size: 20px;
-text-align: center;
+.download-app {
+    font-size: 20px;
+    text-align: center;
 }
 
 .bottom-aside .utente {
@@ -90,19 +84,10 @@ text-align: center;
 }
 
 .bottom-aside .utente img {
-  /*   width: 30px; */
-  height: 25px;
-  object-fit: cover;
-  margin-top: 1%;
-}
-
-#main {
-    width: calc(100vw - 50px);
-    height: 100%;
-    background-color: rgba(20, 25, 34, 255);
-    position: absolute;
-    top: 0;
-    right: 0;
+    /*   width: 30px; */
+    height: 25px;
+    object-fit: cover;
+    margin-top: 1%;
 }
 
 header {
@@ -112,6 +97,16 @@ header {
     height: 50px;
 }
 
+#main {
+    width: calc(100vw - 50px);
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
 .contents {
     width: 100%;
     height: 100%;
@@ -120,7 +115,256 @@ header {
     overflow-y: auto;
 }
 
+/** footer */
+footer {
+    height: 4em;
+    width: 100vw;
+    background-color: rgba(40, 40, 40, 255);
+    position: relative;
+}
 
+/* animazione livel sound */
+.master_play {
+    display: flex;
+    align-items: center;
+    padding: 35px 0px;
+}
+
+
+.wave {
+    width: 20px;
+    height: 30px;
+    /*   border: 1px solid white; */
+    padding-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    left: 3%;
+    top: 25%;
+}
+
+
+.wave .wave1 {
+    width: 4px;
+    height: 10px;
+    margin-right: 2px;
+    border-radius: 10px 10px 0px 0px;
+    background: #36e2ec;
+    animation: wave 0.6s linear infinite;
+}
+
+
+.wave .wave1:nth-child(2) {
+    height: 13px;
+    animation-delay: 0.4s;
+}
+
+.wave .wave1:nth-child(3) {
+    height: 8px;
+    animation-timing-function: 0.5s;
+}
+
+
+@keyframes wave {
+    0% {
+        height: 10px;
+    }
+
+    50% {
+        height: 25px;
+    }
+
+
+    100% {
+        height: 10px;
+    }
+}
+
+/* cover */
+.image_music img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.cover-play img {
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 10%;
+    top: 17%;
+}
+
+.cover-play h5 {
+    text-align: left;
+    position: absolute;
+    left: 19%;
+    top: 14%;
+    font-size: 15px;
+}
+
+.subtitle {
+    font-size: 11px;
+    color: #4c5262;
+    position: absolute;
+    left: 19%;
+    top: 36%;
+
+}
+
+.cover-play i {
+    color: white;
+    font-size: 0.787rem;
+    ;
+}
+
+.cover-play .icon-heart {
+    position: absolute;
+    left: 33%;
+    top: 17%;
+}
+
+.cover-play .icon-folder {
+    position: absolute;
+    left: 33%;
+    top: 47%;
+}
+
+
+
+.icon {
+    width: 60%;
+    position: absolute;
+    left: 40%;
+    top: 7%;
+    color: white;
+}
+
+.icon i {
+    cursor: pointer;
+    padding: 2%;
+}
+
+.master_play span {
+    color: white;
+    width: 6%;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+#currentStart {
+    margin: 0px 4px 0px 16em;
+    text-align: center;
+}
+
+.bar {
+    position: relative;
+    width: 43%;
+    height: 2px;
+    background-color: rgba(105, 105, 170, 0.1);
+}
+
+.bar input {
+    position: absolute;
+    width: 100%;
+    top: -6px;
+    left: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.bar .bar2 {
+    position: absolute;
+    background-color: #36e2ec;
+    width: 0%;
+    height: 100%;
+    top: 0;
+}
+
+.bar .dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #36e2ec;
+    border-radius: 50%;
+    left: 0%;
+    top: -1px;
+    transition: 1s linear;
+}
+
+.bar .dot::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #36e2ec;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    box-shadow: inset 0px 0px 3px #36e2ec;
+}
+
+#currentEnd {}
+
+
+
+.vol {
+    position: relative;
+    width: 100px;
+    height: 2px;
+    margin-left: 50px;
+    border-color: rgba(105, 105, 170, 0.1);
+}
+
+.vol i {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    top: -17px;
+    left: -30px
+}
+
+.vol input {
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    left: 0;
+    cursor: pointer;
+    transition: 3s linear;
+    opacity: 0;
+}
+
+.vol .vol-bar {
+    position: absolute;
+    background-color: #36e2ec;
+    width: 0%;
+    height: 100%;
+    top: 0;
+}
+
+.vol .vol-dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #36e2ec;
+    border-radius: 50%;
+    left: 10%;
+    top: -1px;
+    transition: 1s linear;
+}
+
+.vol .vol-dot::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #36e2ec;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    box-shadow: inset 0px 0px 3px #36e2ec;
+}
 
 
 
@@ -155,13 +399,13 @@ header {
 /*? <img src="./spotify/img/libreria.svg" alt=""> */
 
 /** ICON HEART */
-/*? <i class="fa-solid fa-heart"></i> */
+/*? <i class="fa-regular fa-heart"></i> */
 
 /** ICON PICTURE */
 /*?  */
 
 /** ICON RIP.CASUALE */
-/*?  */
+/*? <i class="fa-solid fa-shuffle"></i>  */
 
 /** ICON ARROW LEFT */
 /*? <i class="fa-solid fa-backward-step"></i> */
@@ -176,7 +420,7 @@ header {
 /*? <i class="fa-solid fa-forward-step"></i> */
 
 /** ICON RIPETIZIONE */
-/*?  */
+/*? <i class="fa-solid fa-arrow-rotate-right"></i> */
 
 /** ICON MICROFONO */
 /*?  */
@@ -185,7 +429,7 @@ header {
 /*? <i class="fa-solid fa-sliders"></i> */
 
 /** ICON AUDIO */
-/*?  */
+/*? <i class="fa-solid fa-volume-off"></i> */
 
 /** ICON FRECCIA SINISTRA */
 /*? <i class="fa-solid fa-angle-left"></i> */
