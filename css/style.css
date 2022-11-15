@@ -90,12 +90,31 @@ aside {
     margin-top: 1%;
 }
 
+/* header e main */
+
 header {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 50px;
+
 }
+
+.upgrade-header{
+padding: 4% 0% 0%;
+
+}
+
+header a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+
+
+}
+
+
 
 #main {
     width: calc(100vw - 50px);
@@ -106,7 +125,6 @@ header {
     right: 0;
 }
 
-
 .contents {
     width: 100%;
     height: 100%;
@@ -114,6 +132,21 @@ header {
     padding: 75px 15px 15px 15px;
     overflow-y: auto;
 }
+
+.row-main{
+width: 100%;
+
+}
+
+.col-main{
+
+}
+
+.list-main{
+
+}
+
+
 
 /** footer */
 footer {
