@@ -161,7 +161,7 @@ header {
 
 .col-main {
     width: 100%;
-
+display: flex;
 }
 
 
@@ -217,26 +217,27 @@ width: 100%;
 }
 
 .list-bit ul {
-    width: 100%;
+    width: 97%;
     height: 100%;
-    line-height: 2rem;
+    line-height: 6rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    text-align: left;
-  /*   flex-wrap: wrap;
-    flex-direction: row; */
+    justify-content: center;
+    /* text-align: -webkit-match-parent; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
     list-style-type: none;
 }
 
 
 
 .list-bit li {
-
+    width: 12rem;
+    margin-left: 1em;
 }
 
 .list-bit a img {
-    width: 92%;
+    width: 13rem;
     /* height: 53%; */
     position: relative;
     bottom: 30%;
@@ -244,11 +245,16 @@ width: 100%;
 }
 
 .text-h h4, .text-h h5 {
-
+text-align: center;
 }
 
 .text-h{
-    
+    width: 42%;
+    text-align: center;
+    position: relative;
+    right:  7.155rem;;
+    top: 6.5rem;
+
 }
 
 
